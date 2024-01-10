@@ -36,12 +36,13 @@ a{
 .item{
   width: 30%;
 }
-
+.home{
+  margin: 20px;
+}
 .home-card{
   max-width: 500px;
   height: max-content;
-  margin: 26px auto;
-  
+  margin: 26px auto;  
 }
 .collection-item{
   width: 100%;
@@ -57,4 +58,9 @@ a{
 
 .material-icons:hover{
   cursor: pointer;
+}
+
+.nv{
+  padding-left:50px;
+  padding-right: 10px;
 }

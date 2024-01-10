@@ -67,7 +67,7 @@ const NavBar = ()=>{
 
 return(
   <nav>
-    <div className="nav-wrapper white">
+    <div className="nav-wrapper white nv">
       <Link to={state?"/":"/signin"} className="brand-logo left">Picfolio</Link>
       <ul id="nav-mobile" className="right hide-on-small-and-down">
         {renderList()}
@@ -87,7 +87,7 @@ return(
                  return <Link to={item._id !== state._id ? "/profile/"+item._id:'/profile'} onClick={()=>{
                    M.Modal.getInstance(searchModal.current).close()
                    setSearch('')
-                 }}><li className="collection-item">{item.email}</li></Link> 
+                 }}><li className="collection-item">{item.name}</li></Link> 
                })}
                
               </ul>

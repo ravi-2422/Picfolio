@@ -123,7 +123,7 @@ const Home = () => {
     <div className="home">
       {data.map((item) => {
         return (
-          <div className="Card home-card" key={item._id}>
+          <div className="card home-card" key={item._id}>
             <h5 style={{ padding: "5px" }}>
               <Link
                 to={

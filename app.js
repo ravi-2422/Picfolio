@@ -3,10 +3,6 @@ const app = express();
 const mongoose = require('mongoose');
 const PORT = process.env.PORT || 5000;
 
-//id:  ravi
-//password
-//5iaGvy3weeV5WHxi 
-
 const {MONGOURI} = require('./config/keys');
 
 require('./models/user'); 
@@ -24,7 +20,7 @@ mongoose.connect(MONGOURI,{
 });
 
 mongoose.connection.on('connected',()=>{
-console.log("connected to mongo yeahh");
+console.log("connected to mongodb database");
 });
 
 mongoose.connection.on('error',(err)=>{
